@@ -1,0 +1,410 @@
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;
+}
+
+#__next {
+  
+}
+
+
+
+.innerMain .back {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+
+
+
+
+.main .leftForm .title {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1.14px;
+}
+
+.main .leftForm .first {
+  margin-top: 41px;
+}
+
+.main .leftForm .first .highlight {
+  color: #D87D4A;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.main .leftForm .firstForms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.main .leftForm .firstForms > div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.main .leftForm .firstForms > .radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 0;
+  gap: 16px;
+  border: 1px solid #CFCFCF;
+  padding-left: 21px;
+  border-radius: 8px;
+}
+
+.main .leftForm label {
+  font-size: 12px;
+  font-weight: 700;
+
+}
+
+.main .leftForm input {
+  padding: 18px 0;
+  padding-left: 24px;
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+}
+
+
+
+.main form .addressInput {
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.main form .rightForm {
+  padding: 33px;
+}
+
+.main form .rightForm .title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.29px;
+}
+
+.main form .rightForm .mid {
+  margin: 32px 0;
+  display: grid;
+  gap: 24px;
+}
+
+.main form .rightForm .mid > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main form .rightForm .mid .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main form .rightForm .mid .header {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.main form .rightForm .mid .text {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.main form .rightForm .lower {
+  display: grid;
+  gap: 8px;
+}
+
+.main form .rightForm .lower > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main form .rightForm .lower .text {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.main form .rightForm .lower .header {
+  font-weight: 700;
+}
+
+.main form .rightForm .lower .grandTotal {
+  margin-top: 16px;
+
+}
+
+.main form .rightForm .lower .grandTotal .header {
+  color: #D87D4A;
+}
+
+.main form .rightForm button {
+  width: 100%;
+  margin-top: 32px;
+  padding: 15px 0;
+  border: none;
+  background-color: #D87D4A;
+  color: white;
+}
+
+.paymentDone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.paymentDoneBackground {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 15;
+}
+
+.paymentDonePopup {
+  width: 540px;
+  height: 581px;
+  background-color: white;
+  border-radius: 8px;
+  position: fixed;
+  z-index: 20;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paymentDonePopup .title {
+  width: 284px;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1.14px;
+  line-height: 36px;
+}
+
+.paymentDonePopup .text {
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.paymentDonePopup .box {
+  height: 140px;
+  border-radius: 8px;
+  display: grid;
+  grid-template: 1fr / 2.46fr 1.98fr;
+  overflow: hidden;
+
+}
+
+.paymentDonePopup .box .left {
+  background-color: #F1F1F1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paymentDonePopup hr {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.paymentDonePopup .box .upperBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentDonePopup .box .upperBox > div {
+  display: flex;
+  gap: 16px;
+}
+
+.paymentDonePopup .box .right {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-left: 32px;
+  gap: 8px;
+}
+
+.paymentDonePopup .box .right .header {
+  opacity: 0.5;
+
+}
+
+.paymentDonePopup button {
+  padding: 15px 0;
+  width: 100%;
+  border: none;
+  background-color: #D87D4A;
+  color: white;
+  font-weight: 700;
+}
+
+.paymentDonePopup .lowerBox {
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .innerMain {
+    width: 1100px;
+    padding-top: 79px;
+    padding-bottom: 141px;
+    
+  }
+  .main form {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main form .rightForm {
+    width: 350px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .main form .leftForm {
+    width: 730px;
+    height: fit-content;
+    background-color: white;
+    padding: 54px 48px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+
+  .innerMain {
+    width: 689px;
+    padding-top: 79px;
+    padding-bottom: 141px;
+    
+  }
+  
+  .main form {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .main form .leftForm {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 54px 48px;
+    border-radius: 8px;
+  }
+
+  .main form .rightForm {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 799px) {
+  .innerMain {
+    width: 327px;
+    padding-top: 79px;
+    padding-bottom: 141px;
+    
+  }
+  
+  .main .leftForm .firstForms {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .main form {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .main form .leftForm {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 54px 48px;
+    border-radius: 8px;
+  }
+
+  .main form .rightForm {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .main .leftForm .firstForms {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .leftForm .firstForms > .radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 0;
+    gap: 16px;
+    border: 1px solid #CFCFCF;
+    padding-left: 21px;
+    border-radius: 8px;
+  }
+
+  .paymentDonePopup {
+    width: 327px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 20;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .paymentDonePopup .title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1.14px;
+    line-height: 36px;
+  }
+  
+  .paymentDonePopup .box {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 232px;
+  }
+
+  .paymentDonePopup .right {
+    padding: 20px 0;
+  }
+
+}

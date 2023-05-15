@@ -1,0 +1,769 @@
+.main {
+  min-height: 100vh;
+}
+
+
+
+
+.main .mainComponent {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (min-width: 1025px) {
+  .main .firstComponent {
+    display: flex;
+    justify-content: center;
+    background-color: #0E0E0E;
+    background-image: url("../images/home/desktop/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main .innerFirstComponent {
+    width: 1100px;
+  }
+  
+  .main .innerFirstComponent .left {
+    margin: 150px 0;
+    color: white;
+    width: 396px;
+    display: grid;
+    gap: 24px;
+  }
+  
+  .main .innerFirstComponent .left .subHeader {
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  
+  .main .innerFirstComponent .left .header {
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    font-size: 56px;
+  }
+  
+  .main .innerFirstComponent .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    width: 349px;
+  }
+  
+  .main .innerFirstComponent .left button {
+    width: fit-content;
+    padding: 15px 30px;
+    margin-top: 16px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .innerMainComponent {
+    width: 1100px;
+    
+  }
+  
+  .main .innerMainComponent .first {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+  }
+  
+  .main .innerMainComponent .card {
+    width: 350px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .main .innerMainComponent .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .innerMainComponent .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .innerMainComponent .card .link {
+    color: #D87D4A;
+  }
+
+  .main .innerMainComponent .second {
+    background-color: #D87D4A;
+    margin-top: 128px;
+    margin-bottom: 48px;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    gap: 138px;
+    padding-top: 133px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-image: url("../images/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position-x: -150px;
+    background-position-y: -50px;
+  }
+  
+  .main .innerMainComponent .second img {
+  }
+  
+  .main .innerMainComponent .second > div {
+    width: 350px;
+  }
+  
+  .main .innerMainComponent .second .header {
+      font-weight: 700;
+      line-height: 58px;
+      letter-spacing: 2px;
+      font-size: 56px;
+      color: white;  
+  }
+  
+  .main .innerMainComponent .second .text {
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    opacity: .75;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  
+  }
+  
+  .main .innerMainComponent .second button {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .innerMainComponent .third {
+    height: 320px;
+    background-image: url("../images/home/desktop/image-speaker-zx7.jpg");
+    background-size: contain;
+    border-radius: 8px;
+    padding: 101px 95px;
+    display: grid;
+    gap: 32px;
+  }
+  
+  .main .innerMainComponent .third .header, .main .innerMainComponent .fourth .header {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+  
+  .main .innerMainComponent .third button, .main .innerMainComponent .fourth button {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .main .innerMainComponent .fourth {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main .innerMainComponent .fourth > div {
+    height: 320px;
+    width: 540px;
+    border-radius: 8px;
+  }
+  
+  .main .innerMainComponent .fourth .left {
+    background-image: url("../images/home/desktop/image-earphones-yx1.jpg");
+  }
+  
+  .main .innerMainComponent .fourth .right {
+    background-color: #f1f1f1;
+    padding: 101px 95px;
+    display: grid;
+    gap: 32px;
+  }
+
+  .main .innerMainComponent .fifth {
+    margin-top: 200px;
+    margin-bottom: 242px;
+    height: 588px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .main .innerMainComponent .fifth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    width: 445px;
+  }
+  
+  .main .innerMainComponent .fifth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  .main .innerMainComponent .fifth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  
+  .main .innerMainComponent .fifth span {
+    color: #D87D4A;
+  }
+  
+  .main .innerMainComponent .fifth .right {
+    background-image: url("../images/shared/desktop/image-best-gear.jpg");
+    border-radius: 8px;
+  }
+  
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .main .firstComponent {
+    display: flex;
+    justify-content: center;
+    background-color: #0E0E0E;
+    background-image: url("../images/home/tablet/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main .innerFirstComponent {
+    width: 800px;
+  }
+  
+  .main .innerFirstComponent .left {
+    margin: 150px 0;
+    color: white;
+    /* width: 396px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+  
+  .main .innerFirstComponent .left .subHeader {
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  
+  .main .innerFirstComponent .left .header {
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    font-size: 56px;
+    width: 396px;
+  }
+  
+  .main .innerFirstComponent .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    width: 349px;
+  }
+  
+  .main .innerFirstComponent .left button {
+    width: fit-content;
+    padding: 15px 30px;
+    margin-top: 16px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+  
+  .main .innerMainComponent {
+    width: 689px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main .innerMainComponent .first {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    width: 100%;
+  }
+  
+  .main .innerMainComponent .card {
+    width: 223px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .main .innerMainComponent .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .innerMainComponent .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .innerMainComponent .card .link {
+    color: #D87D4A;
+  }
+
+  .main .innerMainComponent .second {
+    background-color: #D87D4A;
+    margin-top: 128px;
+    margin-bottom: 48px;
+    height: 720px;
+    width: 689px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* gap: 138px; */
+    /* overflow: hidden; */
+    border-radius: 8px;
+    background-image: url("../images/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -275px;
+  }
+  
+  .main .innerMainComponent .second img {
+    width: 197px;
+    height: 237px;
+  }
+  
+  .main .innerMainComponent .second > div {
+    width: 350px;
+  }
+  
+  .main .innerMainComponent .second .header {
+      font-weight: 700;
+      line-height: 58px;
+      letter-spacing: 2px;
+      font-size: 56px;
+      color: white;  
+  }
+  
+  .main .innerMainComponent .second .text {
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    opacity: .75;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  
+  }
+  
+  .main .innerMainComponent .second button {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .innerMainComponent .third {
+    height: 320px;
+    background-image: url("../images/home/tablet/image-speaker-zx7.jpg");
+    width: 100%;
+    background-size: contain;
+    border-radius: 8px;
+    padding: 101px 95px;
+    display: grid;
+    gap: 32px;
+  }
+  
+  .main .innerMainComponent .third .header, .main .innerMainComponent .fourth .header {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+  
+  .main .innerMainComponent .third button, .main .innerMainComponent .fourth button {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .main .innerMainComponent .fourth {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .main .innerMainComponent .fourth > div {
+    width: 339px;
+    height: 320px;
+    border-radius: 8px;
+  }
+  
+  .main .innerMainComponent .fourth .left {
+    background-image: url("../images/home/tablet/image-earphones-yx1.jpg");
+    background-size: contain;
+  }
+  
+  .main .innerMainComponent .fourth .right {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding-left: 41px;
+  }
+  
+  .main .innerMainComponent .fifth {
+    margin-top: 200px;
+    margin-bottom: 242px;
+    height: 633px;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .main .innerMainComponent .fifth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  .main .innerMainComponent .fifth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 573px;
+
+  }
+  
+  .main .innerMainComponent .fifth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    width: 573px;
+
+  }
+  
+  .main .innerMainComponent .fifth span {
+    color: #D87D4A;
+  }
+  
+  .main .innerMainComponent .fifth .right {
+    background-image: url("../images/shared/tablet/image-best-gear.jpg");
+    border-radius: 8px;
+    grid-row: 1;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 799px) {
+  .main .firstComponent {
+    display: flex;
+    justify-content: center;
+    background-color: #0E0E0E;
+    background-image: url("../images/home/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main .innerFirstComponent {
+    width: 327px;
+  }
+  
+  .main .innerFirstComponent .left {
+    margin: 150px 0;
+    color: white;
+    /* width: 396px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+  
+  .main .innerFirstComponent .left .subHeader {
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  
+  .main .innerFirstComponent .left .header {
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    font-size: 36px;
+    width: 396px;
+  }
+  
+  .main .innerFirstComponent .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+    width: 349px;
+  }
+  
+  .main .innerFirstComponent .left button {
+    width: fit-content;
+    padding: 15px 30px;
+    margin-top: 16px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+  
+  .main .innerMainComponent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main .innerMainComponent .first {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+    margin-top: 92px;
+    width: 100%;
+    gap: 68px;
+  }
+  
+  .main .innerMainComponent .card {
+    width: 327px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .main .innerMainComponent .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .innerMainComponent .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .innerMainComponent .card .link {
+    color: #D87D4A;
+  }
+
+  .main .innerMainComponent .second {
+    background-color: #D87D4A;
+    margin-top: 128px;
+    margin-bottom: 48px;
+    height: 720px;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* gap: 138px; */
+    /* overflow: hidden; */
+    border-radius: 8px;
+    background-image: url("../images/home/desktop/pattern-circles.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -185px;
+    background-position-y: -185px;
+  }
+  
+  .main .innerMainComponent .second img {
+    width: 172px;
+    height: 207px;
+  }
+  
+  .main .innerMainComponent .second > div {
+    width: 280px;
+  }
+  
+  .main .innerMainComponent .second .header {
+      font-weight: 700;
+      line-height: 58px;
+      letter-spacing: 2px;
+      font-size: 36px;
+      color: white;  
+  }
+  
+  .main .innerMainComponent .second .text {
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    opacity: .75;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  
+  }
+  
+  .main .innerMainComponent .second button {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .innerMainComponent .third {
+    height: 320px;
+    background-image: url("../images/home/mobile/image-speaker-zx7.jpg");
+    width: 327px;
+    background-size: contain;
+    border-radius: 8px;
+    padding: 101px 20px;
+    display: grid;
+    gap: 32px;
+  }
+  
+  .main .innerMainComponent .third .header, .main .innerMainComponent .fourth .header {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+  
+  .main .innerMainComponent .third button, .main .innerMainComponent .fourth button {
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .main .innerMainComponent .fourth {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+  }
+  
+  .main .innerMainComponent .fourth > div {
+    width: 339px;
+    height: 320px;
+    border-radius: 8px;
+  }
+  
+  .main .innerMainComponent .fourth .left {
+    background-image: url("../images/home/tablet/image-earphones-yx1.jpg");
+    background-size: contain;
+  }
+  
+  .main .innerMainComponent .fourth .right {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding-left: 41px;
+  }
+  
+  .main .innerMainComponent .fifth {
+    margin-top: 200px;
+    margin-bottom: 242px;
+    height: 633px;
+    display: grid;
+    width: 327px;
+    grid-template-rows: 1fr 1fr;
+    gap: 41px;
+  }
+  
+  .main .innerMainComponent .fifth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  .main .innerMainComponent .fifth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+
+  }
+  
+  .main .innerMainComponent .fifth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+
+  }
+  
+  .main .innerMainComponent .fifth span {
+    color: #D87D4A;
+  }
+  
+  .main .innerMainComponent .fifth .right {
+    background-image: url("../images/shared/mobile/image-best-gear.jpg");
+    border-radius: 8px;
+    grid-row: 1;
+    background-size: cover;
+    height: 300px;
+  }
+}

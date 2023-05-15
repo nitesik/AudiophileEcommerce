@@ -1,0 +1,421 @@
+.main {
+}
+
+.main .intro {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.main .innerIntro {
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  margin: 98px 0;
+}
+
+
+
+.main .innerComponent .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .subHeader {
+  letter-spacing: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+
+.main .header {
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-size: 56px;
+}
+
+.main .text {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.75;
+  width: 349px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.main  button {
+  width: fit-content;
+  padding: 15px 30px;
+  margin-top: 16px;
+  background-color: #D87D4A;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+}
+
+
+
+
+
+@media (min-width: 1025px) {
+  .main .component {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+  }
+  
+  .main .innerComponent {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 125px;
+    height: 560px;
+  }
+
+  
+  .main .first .innerComponent .left {
+    background-image: url("../images/product-yx1-earphones/desktop/image-product.jpg");
+    background-size: contain;
+  }
+
+  .main .fourth {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 240px;
+    width: 1100px;
+  }
+  
+  .main .card {
+    width: 350px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .main .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .card .link {
+    color: #D87D4A;
+  }
+
+  .main .fifth {
+    margin-top: 160px;
+    display: flex;
+    margin-bottom: 242px;
+    justify-content: center;
+  }
+  
+  .main .innerFifth {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 588px;
+  }
+  
+  .main .fifth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    width: 445px;
+  }
+  
+  .main .fifth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  .main .fifth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  
+  .main .fifth span {
+    color: #D87D4A;
+  }
+  
+  .main .fifth .right {
+    background-image: url("../images/shared/desktop/image-best-gear.jpg");
+    border-radius: 8px;
+  
+  }
+
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .main .component {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+  }
+  
+  .main .innerComponent {
+    width: 689px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 125px;
+  }
+
+  .main .innerComponent > * {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+  }
+
+    
+  .main .first .innerComponent .left {
+    background-image: url("../images/product-yx1-earphones/tablet/image-category-page-preview.jpg");
+    background-size: cover;
+  }
+
+  .main .fourth {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 240px;
+    width: 689px;
+  }
+  
+  .main .card {
+    width: 223px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .main .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .card .link {
+    color: #D87D4A;
+  }
+
+  .main .fifth {
+    margin-top: 200px;
+    margin-bottom: 242px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main .innerFifth {
+
+    display: grid;
+    width: 689px;
+    grid-template-rows: 1fr 1fr;
+    gap: 63px;
+  }
+  
+  .main .fifth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  .main .fifth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 573px;
+
+  }
+  
+  .main .fifth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    width: 573px;
+
+  }
+  
+  .main .fifth span {
+    color: #D87D4A;
+  }
+  
+  .main .fifth .right {
+    background-image: url("../images/shared/tablet/image-best-gear.jpg");
+    border-radius: 8px;
+    grid-row: 1;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 799px) {
+  .main .component {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+  }
+
+  .main .header {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  
+  .main .innerComponent {
+    width: 327px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .main .innerComponent > * {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+  }
+
+    
+  .main .first .innerComponent .left {
+    background-image: url("../images/product-yx1-earphones/mobile/image-category-page-preview.jpg");
+    background-size: cover;
+  }
+
+  .main .fourth {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main .innerFourth {
+    width: 327px;
+  }
+  
+  .main .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 140px;
+    gap: 60px;
+  }
+  
+  .main .card {
+    width: 223px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .main .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .card .link {
+    color: #D87D4A;
+  }
+
+  .main .fifth {
+    margin-top: 200px;
+    margin-bottom: 242px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main .innerFifth {
+
+    display: grid;
+    width: 327px;
+    grid-template-rows: 1fr 1fr;
+    height: 689px;
+    gap: 40px;
+  }
+  
+  .main .fifth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  .main .fifth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 327px;
+
+  }
+  
+  .main .fifth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    width: 327px;
+
+  }
+  
+  .main .fifth span {
+    color: #D87D4A;
+  }
+  
+  .main .fifth .right {
+    background-image: url("../images/shared/mobile/image-best-gear.jpg");
+    border-radius: 8px;
+    grid-row: 1;
+    background-size: cover;
+    height: 300px;
+  }
+}

@@ -1,0 +1,815 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (min-width: 1025px) {
+  .innerMain {
+    width: 1100px;
+  }
+
+  .innerMain .back {
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 79px;
+    margin-bottom: 56px;
+  }
+  
+  .innerMain .first {
+    display: flex;
+    align-items: center;
+    gap: 124.5px;
+  }
+  
+  .innerMain .first .header {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.43px;
+    line-height: 44px;
+  }
+  
+  .innerMain .first .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    margin: 32px 0;
+  }
+  
+  .innerMain .cartButtons {
+    display: flex;
+    margin-top: 47px;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .innerMain .leftButtons {
+    display: flex;
+    height: 48px;
+    width: 120px;
+  }
+  
+  .innerMain .leftButtons > * {
+    background-color: #f1f1f1;
+    outline: none;
+    border: none;
+    flex: 1;
+    display: grid;
+    place-content: center;
+  }
+  
+  .innerMain .rightButtons > button {
+    width: 160px;
+    height: 48px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .innerMain .second {
+    margin: 160px 0;
+    display: flex;
+    gap: 125px;
+  }
+  
+  .innerMain .second .header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    margin-bottom: 32px;
+  }
+  
+  .innerMain .second .left .description {
+    width: 635px;
+  
+  }
+  
+  .innerMain .second .description {
+    font-size: 15px;
+    opacity: 0.5;
+    line-height: 25px;
+  }
+  
+  .innerMain .second .included {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .innerMain .second .included .description {
+    display: flex;
+    gap: 24px;
+  
+  }
+  
+  .innerMain .second span {
+    color: #D87D4A;
+    opacity: 1 !important;
+    font-weight: 700;
+  }
+
+  .innerMain .gallery {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .innerMain .gallery > * {
+    border-radius: 8px;
+  }
+  
+  .innerMain .gallery > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .innerMain .gallery > div > * {
+    border-radius: inherit;
+  
+  }
+
+  .innerMain .fourth {
+    text-align: center;
+    margin-top: 160px;
+  }
+  
+  .innerMain .fourth .title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .innerMain .fourth .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+  
+  .innerMain .fourth .cards .header {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  
+  .innerMain .fourth .cards button {
+    padding: 15px 30px;
+    margin-top: 16px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .fifth {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main .fifth .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 240px;
+  }
+  
+  .main .fifth .card {
+    width: 350px;
+    height: 204px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .main .fifth .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .fifth .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .fifth .card .link {
+    color: #D87D4A;
+  }
+
+  .main .sixth {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 242px;
+  }
+  
+  .main .innerSixth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 588px;
+  }
+  
+  .main .sixth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    width: 445px;
+  }
+  
+  .main .sixth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  .main .sixth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  
+  .main .sixth span {
+    color: #D87D4A;
+  }
+  
+  .main .sixth .right {
+    background-image: url("../../images/shared/desktop/image-best-gear.jpg");
+    border-radius: 8px;
+  
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .innerMain {
+    width: 689px;
+  }
+
+  .innerMain .back {
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 33px;
+    margin-bottom: 24px;
+  }
+
+  .innerMain .first {
+    display: flex;
+    align-items: center;
+    gap: 124.5px;
+  }
+
+  .innerMain .first > .left > img {
+    width: 281px;
+    height: 480px;
+    object-fit: cover;
+  }
+  
+  .innerMain .first .header {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.43px;
+    line-height: 44px;
+  }
+  
+  .innerMain .first .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    margin: 32px 0;
+  }
+  
+  .innerMain .cartButtons {
+    display: flex;
+    margin-top: 47px;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .innerMain .leftButtons {
+    display: flex;
+    height: 48px;
+    width: 120px;
+  }
+  
+  .innerMain .leftButtons > * {
+    background-color: #f1f1f1;
+    outline: none;
+    border: none;
+    flex: 1;
+    display: grid;
+    place-content: center;
+  }
+  
+  .innerMain .rightButtons > button {
+    width: 160px;
+    height: 48px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .innerMain .second {
+    margin: 160px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+  }
+  
+  .innerMain .second .header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    margin-bottom: 32px;
+  }
+  
+  .innerMain .second .left .description {
+    width: 635px;
+  
+  }
+
+  .innerMain .second .right {
+    display: flex;
+    width: 549px;
+    justify-content: space-between;
+  }
+  
+  .innerMain .second .description {
+    font-size: 15px;
+    opacity: 0.5;
+    line-height: 25px;
+  }
+  
+  .innerMain .second .included {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .innerMain .second .included .description {
+    display: flex;
+    gap: 24px;
+  
+  }
+  
+  .innerMain .second span {
+    color: #D87D4A;
+    opacity: 1 !important;
+    font-weight: 700;
+  }
+
+  .innerMain .gallery {
+    display: flex;
+    gap: 30px;
+    width: 690px;
+    height: 368px;
+  }
+
+  .innerMain .gallery > img {
+    width: 395px;
+    height: 368px;
+  }
+  
+  .innerMain .gallery > * {
+    border-radius: 8px;
+  }
+  
+  .innerMain .gallery > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .innerMain .gallery > div > * {
+    border-radius: inherit;
+    width: 277px;
+    height: 174px;
+  }
+
+  .innerMain .fourth {
+    text-align: center;
+    margin-top: 160px;
+  }
+  
+  .innerMain .fourth .title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .innerMain .fourth .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+
+  .innerMain .fourth img {
+    width: 223px;
+    height: 318px;
+  }
+  
+  .innerMain .fourth .cards .header {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  
+  .innerMain .fourth .cards button {
+    padding: 15px 30px;
+    margin-top: 16px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .fifth {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main .fifth .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 240px;
+  }
+  
+  .main .fifth .card {
+    width: 223px;
+    height: 217px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .main .fifth .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .fifth .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .fifth .card .link {
+    color: #D87D4A;
+  }
+
+  .main .sixth {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 242px;
+  }
+  
+  .main .innerSixth {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 588px;
+    width: 100%;
+    gap: 63px;
+  }
+  
+  .main .sixth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main .sixth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 573px;
+  }
+  
+  .main .sixth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    width: 573px;
+  }
+  
+  .main .sixth span {
+    color: #D87D4A;
+  }
+  
+  .main .sixth .right {
+    background-image: url("../../images/shared/tablet/image-best-gear.jpg");
+    border-radius: 8px;
+    height: 300px;
+    grid-row: 1;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 799px) {
+  .innerMain {
+    width: 327px;
+  }
+
+  .innerMain .back {
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 33px;
+    margin-bottom: 24px;
+  }
+
+  .innerMain .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 124.5px;
+  }
+
+  .innerMain .first > .left > img {
+    width: 281px;
+    height: 480px;
+    object-fit: cover;
+  }
+  
+  .innerMain .first .header {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.43px;
+    line-height: 44px;
+  }
+  
+  .innerMain .first .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    margin: 32px 0;
+  }
+  
+  .innerMain .cartButtons {
+    display: flex;
+    margin-top: 47px;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .innerMain .leftButtons {
+    display: flex;
+    height: 48px;
+    width: 120px;
+  }
+  
+  .innerMain .leftButtons > * {
+    background-color: #f1f1f1;
+    outline: none;
+    border: none;
+    flex: 1;
+    display: grid;
+    place-content: center;
+  }
+  
+  .innerMain .rightButtons > button {
+    width: 160px;
+    height: 48px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .innerMain .second {
+    margin: 160px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+  }
+  
+  .innerMain .second .header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    margin-bottom: 32px;
+  }
+  
+  .innerMain .second .left .description {
+  
+  }
+
+  .innerMain .second .right {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    justify-content: space-between;
+  }
+  
+  .innerMain .second .description {
+    font-size: 15px;
+    opacity: 0.5;
+    line-height: 25px;
+  }
+  
+  .innerMain .second .included {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .innerMain .second .included .description {
+    display: flex;
+    gap: 24px;
+  
+  }
+  
+  .innerMain .second span {
+    color: #D87D4A;
+    opacity: 1 !important;
+    font-weight: 700;
+  }
+
+  .innerMain .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 327px;
+  }
+
+  .innerMain .gallery > img {
+    width: 100%;
+    height: 368px;
+    background-color: blue
+  }
+  
+  .innerMain .gallery > * {
+    border-radius: 8px;
+    width: 327px;
+  }
+  
+  .innerMain .gallery > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .innerMain .gallery > div > * {
+    border-radius: inherit;
+    width: 327px;
+    height: 174px;
+  }
+
+  .innerMain .fourth {
+    text-align: center;
+    margin-top: 160px;
+  }
+  
+  .innerMain .fourth .title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .innerMain .fourth .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 56px;
+    margin-top: 64px;
+  }
+
+  .innerMain .fourth img {
+    width: 327px;
+    height: 220px;
+    background-size: cover;
+  }
+  
+  .innerMain .fourth .cards .header {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  
+  .innerMain .fourth .cards button {
+    padding: 15px 30px;
+    margin-top: 16px;
+    background-color: #D87D4A;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .main .fifth {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .main .fifth .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    margin-top: 140px;
+    gap: 68px;
+  }
+  
+  .main .fifth .card {
+    width: 223px;
+    height: 217px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  .main .fifth .card img {
+    position: absolute;
+    margin-bottom: 50px;
+  }
+  
+  .main .fifth .card .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .main .fifth .card .link {
+    color: #D87D4A;
+  }
+
+  .main .sixth {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 242px;
+  }
+  
+  .main .innerSixth {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 588px;
+    width: 327px;
+    gap: 63px;
+  }
+  
+  .main .sixth .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main .sixth .left .header {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 327px;
+  }
+  
+  .main .sixth .left .text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    width: 327px;
+  }
+  
+  .main .sixth span {
+    color: #D87D4A;
+  }
+  
+  .main .sixth .right {
+    background-image: url("../../images/shared/mobile/image-best-gear.jpg");
+    border-radius: 8px;
+    width: 327px;
+    height: 300px;
+    grid-row: 1;
+    background-size: cover;
+  }
+}
