@@ -173,6 +173,10 @@ nav {
   .mobile {
     display: none !important;
   }
+
+  .mobileMenu {
+    display: none;
+  }
   
   nav .innerNav {
     display: flex;
