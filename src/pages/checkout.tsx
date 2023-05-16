@@ -73,11 +73,11 @@ const Checkout: NextPage<{ cartItems: CartItems[], totalPrice: number }> = ({ ca
                   <label htmlFor="cod" className={styles.radio} style={{gridColumn: 2, marginBottom: 10}}><input id="cod" onChange={e => setPayment(false)} type="radio" name="payment" /> <label>Cash on Delivery</label></label>
                   {payment && <>
                     <div>
-                    <label htmlFor="">City</label>
+                    <label htmlFor="">Username</label>
                     <input type="text" />
                   </div>
                   <div>
-                    <label htmlFor="">Country</label>
+                    <label htmlFor="">Password</label>
                     <input type="text" />
                   </div></>}
                 </div>

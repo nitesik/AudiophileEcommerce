@@ -98,10 +98,65 @@ function MobileNav({ mobileMenu, setMobileMenu, router, cartOpen, cartItems, set
                   </div>
                 </div>
 
-                { cartOpen && <div className="cartMenu">
+                { cartOpen && <div className="cartMenu mobile">
                 <div className="cartBackground" onClick={() => setCartOpen(false)}></div>
               </div>}
     </>
+  )
+}
+
+function DesktopNav({ mobileMenu, setMobileMenu, router, cartOpen, cartItems, setCartItems, buttonHandler, totalPrice, setCartOpen } : any) {
+    
+  return (
+    <nav>
+      <div className={"innerNav desktop"}>
+          <Link href={"/"}><Image src={logo} width={143} height={25} alt="logo" /></Link>
+          <div className={"navComponents"}>
+            <Link href="/" className={"text"}>HOME</Link>
+            <Link href="/headphones" className={"text"}>HEADPHONES</Link>
+            <Link href="/speakers" className={"text"}>SPEAKERS</Link>
+            <Link href="/earphones" className={"text"}>EARPHONES</Link>
+          </div>
+          <div>
+            <Image src={cart_icon} width={23} height={20} alt="cart" onClick={() => setCartOpen(true)} />
+            <div className={cartOpen ? `cartPopup` : "cartDisabled"}>
+                <div className="cardTop">
+                  <div className="header">CART ({cartItems.length})</div>
+                  <div className="remove" onClick={() => setCartItems([])} >Remove all</div>
+                </div>
+                <div className="cardMid">
+                  {cartItems.map((item: CartItems) => 
+                  <div key={item.name}>
+                    <div className="left">
+                      <Image src={item.image} width={64} height={64} alt="image" />
+                      <div>
+                        <div className="title">{item.name.split(" ")[0]}</div>
+                        <div className="price">$ {item.price}</div>
+                      </div>
+                    </div>
+                    <div className="right">
+                      <div className={"leftButtons"}>
+                        <button onClick={() => buttonHandler("-", item.name)}>-</button>
+                        <div className={"quantity"}>{item.quantity}</div>
+                        <button onClick={() => buttonHandler("+", item.name)}>+</button>
+                      </div>
+                    </div>
+                  </div>)}
+                </div>
+                <div className="cartBottom">
+                  <div className="total">
+                    <div className="title">TOTAL</div>
+                    <div className="money">$ {totalPrice}</div>
+                  </div>
+                  <button onClick={() => {router.push("/checkout"); setCartOpen(false)}}>CHECKOUT</button>
+                </div>
+              </div>
+          </div>
+          { cartOpen && <div className="cartMenu">
+              <div className="cartBackground" onClick={() => setCartOpen(false)}></div>
+            </div>}
+        </div>
+    </nav>
   )
 }
 
@@ -143,60 +198,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     setCartItems(newArr);
   }
   
-  function DesktopNav() {
-    
-    return (
-      <nav>
-        <div className={"innerNav desktop"}>
-            <Link href={"/"}><Image src={logo} width={143} height={25} alt="logo" /></Link>
-            <div className={"navComponents"}>
-              <Link href="/" className={"text"}>HOME</Link>
-              <Link href="/headphones" className={"text"}>HEADPHONES</Link>
-              <Link href="/speakers" className={"text"}>SPEAKERS</Link>
-              <Link href="/earphones" className={"text"}>EARPHONES</Link>
-            </div>
-            <div>
-              <Image src={cart_icon} width={23} height={20} alt="cart" onClick={() => setCartOpen(true)} />
-              <div className={cartOpen ? `cartPopup` : "cartDisabled"}>
-                  <div className="cardTop">
-                    <div className="header">CART ({cartItems.length})</div>
-                    <div className="remove" onClick={() => setCartItems([])} >Remove all</div>
-                  </div>
-                  <div className="cardMid">
-                    {cartItems.map(item => 
-                    <div key={item.name}>
-                      <div className="left">
-                        <Image src={item.image} width={64} height={64} alt="image" />
-                        <div>
-                          <div className="title">{item.name.split(" ")[0]}</div>
-                          <div className="price">$ {item.price}</div>
-                        </div>
-                      </div>
-                      <div className="right">
-                        <div className={"leftButtons"}>
-                          <button onClick={() => buttonHandler("-", item.name)}>-</button>
-                          <div className={"quantity"}>{item.quantity}</div>
-                          <button onClick={() => buttonHandler("+", item.name)}>+</button>
-                        </div>
-                      </div>
-                    </div>)}
-                  </div>
-                  <div className="cartBottom">
-                    <div className="total">
-                      <div className="title">TOTAL</div>
-                      <div className="money">$ {totalPrice}</div>
-                    </div>
-                    <button onClick={() => {router.push("/checkout"); setCartOpen(false)}}>CHECKOUT</button>
-                  </div>
-                </div>
-            </div>
-            { cartOpen && <div className="cartMenu">
-                <div className="cartBackground" onClick={() => setCartOpen(false)}></div>
-              </div>}
-          </div>
-      </nav>
-    )
-  }
+  
 
   
 
@@ -257,7 +259,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
 
   return (
     <SessionProvider session={session}>
-      <DesktopNav />
+      <DesktopNav mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} router={router} cartOpen={cartOpen} cartItems={cartItems} buttonHandler={buttonHandler} totalPrice={totalPrice} setCartOpen={setCartOpen} setCartItems={setCartItems} />
       <MobileNav mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} router={router} cartOpen={cartOpen} cartItems={cartItems} buttonHandler={buttonHandler} totalPrice={totalPrice} setCartOpen={setCartOpen} setCartItems={setCartItems} />
 
       <Component {...pageProps} cartItems={cartItems} setCartItems={setCartItems} totalPrice={totalPrice} />
