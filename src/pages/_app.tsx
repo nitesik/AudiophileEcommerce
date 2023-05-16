@@ -49,17 +49,17 @@ function MobileNav({ mobileMenu, setMobileMenu, router, cartOpen, cartItems, set
                 <div className={"card"}>
                   <Image src={headphones_image} width={163} height={160} alt="headphones" />
                   <div className={"header"}>HEADPHONES</div>
-                  <Link className={"link"} href="/headphones">SHOP</Link>
+                  <Link className={"link"} onClick={() => setMobileMenu(false)} href="/headphones">SHOP</Link>
                 </div>
                 <div className={"card"}>
                   <Image src={speakers_image} width={163} height={160} alt="headphones" />
                   <div className={"header"}>SPEAKERS</div>
-                  <Link className={"link"} href="/speakers">SHOP</Link>
+                  <Link className={"link"} onClick={() => setMobileMenu(false)} href="/speakers">SHOP</Link>
                 </div>
                 <div className={"card"}>
                   <Image src={earphones_image} width={163} height={160} alt="headphones" />
                   <div className={"header"}>EARPHONES</div>
-                  <Link className={"link"} href="/earphones">SHOP</Link>
+                  <Link className={"link"} onClick={() => setMobileMenu(false)} href="/earphones">SHOP</Link>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   const [cartItems, setCartItems] = useState<CartItems[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [totalPrice, setTotalPrice] = useState<number>(0);
-  const [mobileMenu, setMobileMenu] = useState<boolean>(true);
+  const [mobileMenu, setMobileMenu] = useState<boolean>(false);
 
 
   const router = useRouter();
